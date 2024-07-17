@@ -1,0 +1,15 @@
+@vite([
+'resources/js/app.js',
+'resources/js/home-js.js',
+'resources/css/home.css',
+'resources/css/add-category-screen.css',
+'resources/css/add-classes-screen.css',
+'resources/css/add-students-screen.css',
+'resources/css/add-coordinators-screen.css',
+'resources/css/add-student-in-class-screen.css',
+'resources/css/categories.css',
+'resources/css/classe-selected-screen.css',
+'resources/css/classes-screen.css',
+'resources/css/students-screen.css',
+'https://kit.fontawesome.com/ae360af17e.js',
+])

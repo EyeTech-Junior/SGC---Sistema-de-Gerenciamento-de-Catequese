@@ -1,0 +1,32 @@
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.imagem{
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+    font-family: 'Noto-Sans', sans-serif !important;
+    padding: 10px !important;
+}
+
+.titulo {
+    font-size: 38px;
+}
+
+.form-container {
+    max-width: 450px;
+    min-height: 400px;
+    padding: 2rem;
+    padding-top: 45px;
+    background: white;
+    border-radius: 20px;
+}
+
+.form-control {
+    border-radius: 15px;
+}
+
+.legenda {
+    margin-left: 10px;
+}

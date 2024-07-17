@@ -1,0 +1,144 @@
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* Sidebar Elements Style */
+
+#sidebar {
+    width: 414px;
+    background: rgb(0, 102, 255);
+    transition: all 0.35s ease-in-out;
+}
+
+.sidebar-logo {
+    padding: 2rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 25px;
+    margin-left: 0;
+}
+
+a.sidebar-link {
+    border-radius: 30px 0 0 30px;
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: .9rem;
+}
+
+.sidebar-link.active {
+    background: #fbfcff;
+    color: #0d6efd;
+}
+
+.sidebar-item i {
+    margin-right: 11px;
+    font-size: 1.39rem;
+}
+
+#alunos-item i {
+    margin-top: 4px;
+}
+
+#coordenadores-item i {
+    margin-right: 2px;
+    margin-top: 1px;
+}
+
+#turmas-item i {
+    margin-top: 3px;
+}
+
+#categories-item i {
+    margin-right: 9.1px;
+    margin-left: -1px;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+/* Sidebar Toggle */
+
+#sidebar.collapsed {
+    margin-left: -414px;
+}
+
+/* Complete Main */
+
+.complete-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*Faz toda a diferença em relação a height.*/
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-expand .navbar-nav {
+    margin-left: auto;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/* Hidden */
+
+.hidden {
+    display: none;
+}

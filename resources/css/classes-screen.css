@@ -1,0 +1,141 @@
+/* Turmas */
+
+.main-turmas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /*Para ocupar todo espaço acima do footer*/
+}
+
+.turmas {
+    width: 95%;
+    padding: 0 3rem;
+    margin-bottom: 1rem;
+}
+
+.title-turmas {
+    display: flex;
+    justify-content: space-between;
+    width: 91.3%;
+    padding: 0 3rem;
+    margin-top: 1.68rem;
+}
+
+.title-turmas h3{
+    font-size: 1.98rem;
+}
+
+.btn-success {
+    font-size: .9rem;
+    padding: .5rem .7rem;
+}
+
+.card.turma {
+    height: 6.5rem;
+    border-radius: 12px;
+    margin: 1.49rem;
+}
+
+.card-title {
+    font-size: 2.3rem;
+    margin: .7rem !important;
+}
+
+.card-color {
+    border-radius: 0 0 12px 12px;
+    height: 100%;
+    background: #0d6efd;
+}
+
+.pagination-turmas {
+    --bs-pagination-font-size: .92rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 912px), (width: 1024px) and (height: 1366px) {
+    #sidebar {
+        min-width: 40%;
+    }
+
+    .col.card-turma {
+        width: 100%;
+    }
+
+    .pagination-turmas {
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        margin-top: 1.16rem;
+    }
+
+    .title-turmas {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .title-turmas button {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .turmas {
+        padding: 0;
+    }
+
+    .turmas .card {
+        margin: 1.49rem 0;
+    }
+}
+
+@media (max-width: 430px) {
+    html {
+        overflow: scroll;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+
+    #sidebar {
+        min-width: 70%;
+    }
+
+    #sidebar {
+        margin-right: 24px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -438px;
+    }
+
+    .turmas {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 414px) {
+    .title-turmas h3 {
+        margin-left: 1rem;
+    }
+}
+
+@media (width: 360px) {
+    .sidebar-logo {
+        padding: 2rem 30px;
+    }
+}
+
+@media (width: 344px) {
+    .sidebar-logo {
+        padding: 2rem 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    .sidebar-logo {
+        padding: 2rem 16.4px;
+    }
+}
